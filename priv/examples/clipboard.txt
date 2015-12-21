@@ -6,3 +6,5 @@ Clipboard2 = gtknode:cmd(fooey,'Gdk_atom_intern',["CLIPBOARD",false]).
 gtknode:cmd(fooey,'Gtk_clipboard_set_text',[Clipboard0,"zpeti.\n",-1]).
 gtknode:cmd(fooey,'Gtk_clipboard_clear',[Clipboard0]).
 gtknode:stop(fooey).
+
+erl -pa ./ebin -sname test -s top start
